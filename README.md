@@ -43,9 +43,9 @@ pip install -e .
 
 ### Usage 
 ```python
-from ranger import Ranger  # this is from ranger.py
-from ranger import RangerVA  # this is from ranger913A.py
-from ranger import RangerQH  # this is from rangerqh.py
+from asranger import Ranger  # this is from asranger.py
+from asranger import RangerVA  # this is from ranger913A.py
+from asranger import RangerQH  # this is from rangerqh.py
 
 # Define your model
 model = ...
