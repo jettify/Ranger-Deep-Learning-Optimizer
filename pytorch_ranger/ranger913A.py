@@ -23,10 +23,9 @@ from torch.optim.optimizer import Optimizer, required
 
 
 class RangerVA(Optimizer):
-
-    def __init__(self, params, lr=1e-3, alpha=0.5, k=6, n_sma_threshhold=5, betas=(.95,0.999), 
-                 eps=1e-5, weight_decay=0, amsgrad=True, transformer='softplus', smooth=50,
-                 grad_transformer='square'):
+    def __init__(self, params, lr=1e-3, alpha=0.5, k=6, n_sma_threshhold=5,
+                 betas=(.95, 0.999), eps=1e-5, weight_decay=0, amsgrad=True,
+                 transformer='softplus', smooth=50, grad_transformer='square'):
         #parameter checks
         if not 0.0 <= alpha <= 1.0:
             raise ValueError(f'Invalid slow update rate: {alpha}')
@@ -73,8 +72,7 @@ class RangerVA(Optimizer):
         #    w.requires_grad = False
 
     def __setstate__(self, state):
-        print("set state called")
-        super(Ranger, self).__setstate__(state)
+        super().__setstate__(state)
 
 
     def step(self, closure=None):

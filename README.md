@@ -1,4 +1,11 @@
 # Ranger-Deep-Learning-Optimizer
+
+Install with 
+```bash
+pip install pytorch_ranger
+```
+
+
 Ranger - a synergistic optimizer combining RAdam (Rectified Adam) and LookAhead in one codebase.
 
 Latest version 9.3.19 - full refactoring for slow weights and one pass handling (vs two before).  Refactor should eliminate any random save/load issues regarding memory.
@@ -43,9 +50,9 @@ pip install -e .
 
 ### Usage 
 ```python
-from asranger import Ranger  # this is from asranger.py
-from asranger import RangerVA  # this is from ranger913A.py
-from asranger import RangerQH  # this is from rangerqh.py
+from pytorch_ranger import Ranger  # this is from ranger.py
+from pytorch_ranger import RangerVA  # this is from ranger913A.py
+from pytorch_ranger import RangerQH  # this is from rangerqh.py
 
 # Define your model
 model = ...
