@@ -2,8 +2,8 @@ from setuptools import setup
 from setuptools import find_packages
 
 setup(
-    name='asranger',
-    version='0.0.5',
+    name='pytorch_ranger',
+    version='0.0.6',
     description='Ranger - a synergistic optimizer using RAdam '
                 '(Rectified Adam) and LookAhead in one codebase ',
     license='Apache',
