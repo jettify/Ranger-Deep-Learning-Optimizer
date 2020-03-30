@@ -65,13 +65,13 @@ class Ranger(Optimizer):
     ):
         # parameter checks
         if not 0.0 <= alpha <= 1.0:
-            raise ValueError(f'Invalid slow update rate: {alpha}')
+            raise ValueError('Invalid slow update rate: {}'.format(alpha))
         if not 1 <= k:
-            raise ValueError(f'Invalid lookahead steps: {k}')
+            raise ValueError('Invalid lookahead steps: {}'.format(k))
         if not lr > 0:
-            raise ValueError(f'Invalid Learning Rate: {lr}')
+            raise ValueError('Invalid Learning Rate: {}'.format(lr))
         if not eps > 0:
-            raise ValueError(f'Invalid eps: {eps}')
+            raise ValueError('Invalid eps: {}'.format(eps))
 
         # parameter comments:
         # beta1 (momentum) of .95 seems to work better than .90...
