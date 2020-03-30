@@ -3,7 +3,7 @@ from setuptools import find_packages
 
 setup(
     name='pytorch_ranger',
-    version='0.1.0',
+    version='0.1.1',
     description='Ranger - a synergistic optimizer using RAdam '
                 '(Rectified Adam) and LookAhead in one codebase ',
     license='Apache',
