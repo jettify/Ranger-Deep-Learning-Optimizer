@@ -3,13 +3,13 @@ from setuptools import find_packages
 
 setup(
     name='pytorch_ranger',
-    version='0.0.6',
+    version='0.1.0',
     description='Ranger - a synergistic optimizer using RAdam '
                 '(Rectified Adam) and LookAhead in one codebase ',
     license='Apache',
     url="https://github.com/mpariente/Ranger-Deep-Learning-Optimizer",
     long_description='',
-    python_requires='>=3.6',
+    python_requires='>=3.5',
     install_requires=['torch'],
     packages=find_packages(),
     classifiers=[
